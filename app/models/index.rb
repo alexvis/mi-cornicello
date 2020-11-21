@@ -1,2 +1,2 @@
-class Index < ActiveRecord
-end 
+class Index < ApplicationRecord
+end
