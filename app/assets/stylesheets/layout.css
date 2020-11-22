@@ -9,7 +9,7 @@ body {
   width: 95%;
   min-width: 775px;
   max-width: 960px;
-  background-color: #FBFBFB;
+  background-color: white;
 }
 
 /* header */
@@ -17,10 +17,8 @@ body {
 header {
   margin-top: 10px;
   width: 100%;
-  height: 50px;
-  font-weight: 100;
+  height: 145px;
   font-family: "Gill Sans", Charcoal, sans-serif;
-  font-weight: 100;
 }
 
 header nav {
@@ -28,7 +26,7 @@ header nav {
   font-variant: small-caps;
   float: left;
   width: 49%;
-  height: 145px;
+  height: 100%;
   border-left: 1.5px solid black;
   border-right: 1.5px solid black;
 
@@ -37,9 +35,10 @@ header nav {
 nav ul li {
   float: left;
   margin: 0;
-  font-weight: 300;
+  font-weight: 350;
 }
 
+/* nav top links */
 nav ul li.top-left, nav ul li.top-right {
   font-size: 1.3em;
   width: 49.79%;
@@ -50,7 +49,6 @@ nav ul li.top-left, nav ul li.top-right {
 }
 
 nav ul li.top-left {
-  border-right: 1.5px solid black;
 }
 
 a:visited, a:link {
@@ -58,7 +56,7 @@ a:visited, a:link {
 }
 
 li a:hover, li a:active {
-  color: rgb(151,151,151)
+  color: rgb(151,151,151);
 }
 
 li.b1, li.b2, li.b3, li.b4 {
@@ -68,17 +66,12 @@ li.b1, li.b2, li.b3, li.b4 {
 }
 
 li.b1, li.b2, li.b3 {
-  border-right: 1.5px solid black;
 }
 
-img {
-  width: 145px;
-  height: 145px;
-}
 
 header aside.left {
   width: 25%;
-  height: 145px;
+  height: 100%;
   float: left;
   background-image: url("logo.jpg");
   background-size: contain;
@@ -89,7 +82,6 @@ header aside.left {
 
 header aside.left a {
   font-size: 1.5em;
-  font-weight: bold;
   text-align: center;
   line-height: 137px;
   font-weight: 400;
@@ -97,7 +89,7 @@ header aside.left a {
 
 header aside.right {
   width: 25.6%;
-  height: 145px;
+  height: 100%;
   text-align: center;
   float: right;
 }
@@ -108,24 +100,80 @@ aside.right p a {
 
 aside.right p.phone {
 height: 40%;
-border-bottom: 1.5px solid black;
-line-height: 55px;
-font-size: 1.2em;
+line-height: 100px;
+font-size: 1.5em;
 }
 
-aside.right p.top {
-  font-size: 2em;
-  font-weight: 400;
-  padding: 5px 0px 5px 0px;
-}
-
-aside.right p.bottom {
-  font-size: 1.3em;
-  font-weight: 400;
-  padding-top: 5px;
-
-}
 
 aside.right p.address {
-  font-size: 0.8em;
+  font-size: 1.5em;
+  font-weight: 400;
+  padding-top: 21px;
+
+}
+
+/* benvenutto paragraph */
+
+p.benvenutto {
+  margin: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 50px;
+  width: 250px;
+  height: 50px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 50px/20px;
+
+}
+
+/* section */
+section {
+}
+
+/* section image */
+section aside.right  {
+  width: 67%;
+  float: right;
+  border: 4px double black;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+section aside.right img {
+  width: 100%;
+}
+
+section aside.right nav.bottom li {
+  width: 33.2%;
+  float: left;
+  padding-top: 1px;
+}
+
+li.one, li.two {
+  padding-right: 1px;
+}
+
+/* section article */
+section article.left {
+  text-align: left;
+}
+
+section article.left h1 {
+  font-size: 1.5em;
+  font-weight: normal;
+  color: rgb(151,151,151)
+}
+
+section article.left h2 {
+  font-size: 1.3em;
+  font-weight: normal;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: rgb(151,151,151);
+}
+
+section article.left p {
 }
