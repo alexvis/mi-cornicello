@@ -77,10 +77,10 @@ header aside.left {
 }
 
 header aside.left a {
-  font-size: 1.4em;
+  font-size: 2.5em;
   text-align: center;
   line-height: 137px;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 header aside.right {
@@ -166,7 +166,7 @@ section article.left h1 {
   color: rgb(151,151,151)
 }
 
-section article.left h2 {
+h2 {
   font-size: 1.3em;
   font-weight: normal;
   padding-top: 10px;
@@ -175,4 +175,95 @@ section article.left h2 {
 }
 
 section article.left p {
+}
+
+/* footer */
+
+footer {
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+  border-top: 4px double black;
+  width: 96%;
+  height: 120px;
+  margin-top: 30px;
+}
+
+footer div {
+  padding-top: 10px;
+  width: 33%;
+  float: left;
+  margin-bottom: 50px;
+}
+
+footer div p {
+  padding: 2px;
+}
+
+footer div.center {
+  text-align: center;
+}
+
+footer div.center ul li a  {
+  font-size: 2em;
+}
+footer div.center ul li.insta {
+  padding-top: 10px;
+  padding-left: 38%;
+  float: left;
+}
+footer div.center ul li.face {
+  padding-top: 10px;
+  padding-right: 38%;
+  float: right;
+}
+
+footer div.right {
+  text-align: right;
+}
+footer div.right h2 {
+  padding-right: 30px;
+}
+
+footer div.right p.phone {
+  padding-right: 37px;
+}
+
+footer div.right p.address {
+  padding-right: 34px;
+}
+
+footer div.right p.location {
+  padding-top: 7px;
+  font-weight: 400;
+  padding-right: 41px;
+}
+
+/* CopyRight */
+footer div.bottom {
+  font-size: 0.8em;
+  width: 100%;
+  clear: left;
+  padding-top: 10px;
+  border-top: 1px solid grey;
+}
+
+footer div.bottom p.left {
+  width: 50%;
+  float: left;
+}
+
+footer div.bottom p.right {
+  width: 7.%;
+  float: right;
+}
+
+footer a.footer {
+  float: right;
+  width: 10%;
+  line-height: 16px;
+}
+
+p {
+  font-weight: 200;
 }
