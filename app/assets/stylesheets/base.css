@@ -1,5 +1,5 @@
 body, article, nav, footer, section, header, ul, li, a,
-h1, h2, p {
+h1, h2, p, img, aside {
   display: block;
   background: transparent;
   margin: 0;
@@ -7,6 +7,8 @@ h1, h2, p {
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
+  font-family: "Gill Sans", Charcoal, sans-serif;
+
 }
 
 nav ul {
@@ -15,7 +17,7 @@ nav ul {
 }
 
 a {
-   text-decoration: none;
+  text-decoration: none;
 }
 
 body {
