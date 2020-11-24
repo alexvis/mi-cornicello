@@ -186,14 +186,21 @@ footer {
   border-top: 4px double black;
   width: 96%;
   height: 120px;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
-footer div {
+footer div.left, footer div.right {
   padding-top: 10px;
-  width: 33%;
+  width: 27%;
   float: left;
   margin-bottom: 50px;
+}
+
+
+footer div.center {
+  padding-top: 10px;
+  width: 46%;
+  float: left;
 }
 
 footer div p {
@@ -219,24 +226,21 @@ footer div.center ul li.face {
 }
 
 footer div.right {
-  text-align: right;
+  text-align: left;
 }
 footer div.right h2 {
-  padding-right: 30px;
+  padding-left: 53px;
 }
 
-footer div.right p.phone {
-  padding-right: 37px;
+footer div.right p {
+  padding-left: 53px;
 }
 
-footer div.right p.address {
-  padding-right: 34px;
-}
 
 footer div.right p.location {
   padding-top: 7px;
   font-weight: 400;
-  padding-right: 41px;
+  padding-left: 53px
 }
 
 /* CopyRight */
