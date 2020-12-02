@@ -1,8 +1,4 @@
 
-html {
-  height: 100%;
-}
-
 body {
   margin-left: auto;
   margin-right: auto;
@@ -54,7 +50,7 @@ nav ul li.top-left, nav ul li.top-right {
 nav ul li.top-left {
 }
 
-a:visited, a:link {
+ul.header li a:visited, ul.header li a:link {
   color: black;
 }
 
@@ -283,26 +279,25 @@ p {
 
 @media only screen and (max-width: 500px) {
 
-  /* header */
-  header aside.left {
-    width: 100%;
-  }
   header nav {
     display: none;
   }
 
-  a.far {
-    display: block;
-    float: left;
-  }
-
-
-  a.far:hover+ul, nav.header ul:hover {
-    display: block;
-  }
-
   header aside.right {
     display: none;
+  }
+  /* header */
+  header aside.left {
+    display: block;
+    margin-top: 10px;
+    width: 50%;
+    height: 85%;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  a#logo {
+
   }
 
   /* benvenuto welcome div */

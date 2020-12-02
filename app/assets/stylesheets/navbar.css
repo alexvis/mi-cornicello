@@ -5,14 +5,28 @@ aside.asideNavbar {
   display: none;
 }
 
+i#phone-icon {
+  display: none
+}
+
 
 @media only screen and (max-width: 500px) {
+
+  header {
+    margin-top: 0px;
+    height: 150px;
+    display: block;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+  }
 
   aside.asideNavbar {
     display: block;
   }
 
   nav.navbar {
+    margin-top: -10px;
     display: block;
     position: fixed;
     left: -60%;
@@ -27,18 +41,21 @@ aside.asideNavbar {
     opacity: 1
   }
 
-  i.material-icons {
+  i#navbar {
     font-size: 5em;
     position: fixed;
     margin-left: 15px;
     z-index: 1;
+    left: 15px;
+    top: 15px;
   }
 
 
   ul.navbar {
-    margin-top: -10px;
+    /* margin-top: -10px; */
     height: 100%;
     float: left;
+    top: 50px;
     background-color: #009879;
   }
 
@@ -48,8 +65,8 @@ aside.asideNavbar {
     float: left;
     font-size: 3em;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   div.border {
@@ -63,16 +80,56 @@ aside.asideNavbar {
   }
 
   ul.navbar li:first-of-type {
-    margin-top: 152px;
+    margin-top: 210px;
   }
 
   ul.navbar li a:visited, ul.navbar li a:link {
     color: white;
   }
 
-  ul.navbar li a:active {
-    background: rgb(151,151,151)
+  ul.navbar li a {
+    height: 100%;
   }
+
+  ul.navbar li:active {
+    background: #007d65;
+  }
+
+/* Rossano's logo */
+  div#logo {
+    margin-top: 30px;
+    text-align: center;
+    display: block;
+    position: absolute;
+    left: 39%;
+    background-image: url("logo.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 115px;
+    height: 120px;
+  }
+
+  div#logo a {
+    width: 100%;
+    height: 100%;
+    display: contents;
+    line-height: 108px;
+    font-size: 170%;
+    font-weight: 200;
+  }
+
+  /* phone icon */
+
+i#phone-icon {
+  font-size: 5em;
+  position: fixed;
+  display: block;
+  position: fixed;
+  right: 15px;
+  top: 15px;
+
+}
 
 
 
