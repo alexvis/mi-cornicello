@@ -1,8 +1,13 @@
 
+html {
+  height: 100%;
+}
+
 body {
   margin-left: auto;
   margin-right: auto;
   width: 95%;
+  min-height: 100%;
   min-width: 775px;
   max-width: 960px;
   background-color: white;
@@ -16,6 +21,8 @@ header {
   height: 145px;
   font-family: "Gill Sans", Charcoal, sans-serif;
 }
+
+
 
 header nav {
   font-size: 1em;
@@ -51,7 +58,7 @@ a:visited, a:link {
   color: black;
 }
 
-li a:hover, li a:active {
+ul.header li a:hover, ul.header li a:active {
   color: rgb(151,151,151);
 }
 
@@ -270,4 +277,46 @@ footer a.footer {
 
 p {
   font-weight: 200;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+
+  /* header */
+  header aside.left {
+    width: 100%;
+  }
+  header nav {
+    display: none;
+  }
+
+  a.far {
+    display: block;
+    float: left;
+  }
+
+
+  a.far:hover+ul, nav.header ul:hover {
+    display: block;
+  }
+
+  header aside.right {
+    display: none;
+  }
+
+  /* benvenuto welcome div */
+
+  div.benvenuto {
+    display: flex;
+    width: 100%;
+  }
+
+  div.benvenuto p {
+    width: 50%;
+  }
+
+  /* section  */
+
+
 }
