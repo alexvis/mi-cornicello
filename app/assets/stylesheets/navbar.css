@@ -27,13 +27,13 @@ aside.asideNavbar {
     opacity: 1
   }
 
-  i#navbar {
-    font-size: 80px;
-    font-weight: 100;
+  i.material-icons {
+    font-size: 5em;
     position: fixed;
-    margin: 15px;
+    margin-left: 15px;
     z-index: 1;
   }
+
 
   ul.navbar {
     margin-top: -10px;
