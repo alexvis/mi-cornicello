@@ -71,7 +71,13 @@
    font-size: 0.9em;
  }
 
+ footer div.bottom p.left {
+
+   margin-left: 30px;
+ }
+
  footer a.footer {
    color: #02A1DB;
+   width: 20%;
  }
 }

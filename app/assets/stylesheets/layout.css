@@ -261,6 +261,7 @@ footer div.bottom {
 footer div.bottom p.left {
   width: 50%;
   float: left;
+  margin-left: 20px;
 }
 
 footer div.bottom p.right {
@@ -270,8 +271,9 @@ footer div.bottom p.right {
 
 footer a.footer {
   float: right;
-  width: 12%;
+  width: 10%;
   line-height: 16px;
+  padding-left: 2px;
 }
 
 p {
