@@ -1,0 +1,90 @@
+@charser "utf-8";
+
+
+
+@media only screen and (max-width: 500px) {
+
+/* benvenuto welcome text */
+  div.benvenuto {
+    display: flex;
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 18px;
+  }
+
+  div.benvenuto p {
+    font-size: 3.5em;
+    width: 400px;
+    height: 80px;
+    line-height: 80px;
+  }
+
+/* pictures section */
+
+section aside.right img.truck-pic {
+  display: none;
+}
+  section aside.right {
+    width: 90%;
+    border: none;
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+
+  div.bottom {
+    width: 100%;
+    height: auto;
+  }
+
+  aside div.bottom li {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  /* aside div.bottom li   {
+    height: 90%;
+  } */
+
+/* section paragraph */
+  section article.left {
+    clear: both;
+    background-color: #007d65;
+    text-align: center;
+    color: white;
+  }
+
+  section article.left h1.making-pizza {
+    font-size: 3em;
+    clear: both;
+    margin-bottom: 10px;
+    padding-top: 15px;
+  }
+
+  article.left h2.first {
+    display: none;
+ }
+
+ article.left p {
+   margin-left: 30px;
+   margin-right: 30px;
+   padding-bottom: 30px;
+   font-size: 1.55em !important;
+ }
+
+ h2.seconde {
+   display: none;
+ }
+
+ p.seconde-p {
+   display: none;
+ }
+
+ /* footer div.left {
+   background-color: #007d65;
+   position: absolute;
+   right: 10px;
+   top: 400px;
+ } */
+
+
+}

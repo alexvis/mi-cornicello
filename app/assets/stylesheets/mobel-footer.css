@@ -1,0 +1,77 @@
+@charset "utf-8"
+
+
+
+@media only screen and (max-width: 500px) {
+  footer div.left {
+    display: none
+  }
+
+  footer div {
+    width: 100% !important;
+  }
+
+  footer div.center h2 {
+    font-size: 3em;
+    color: #2094C0;
+  }
+
+  /* Facebook Instagram logo  */
+  footer div.center ul li a  {
+    font-size: 6em;
+  }
+
+  footer div.center ul li.insta {
+    padding-left: 195px;
+    float: left;
+    padding-right: 0px !important;
+  }
+
+  footer div.center ul li.face {
+    padding-right: 220px;
+  }
+
+  /* contact info */
+
+  footer div.right h2 {
+    display: none;
+  }
+
+  footer div.right {
+    text-align: center;
+    margin-top: 18px;
+  }
+ footer div.right p {
+   padding-left: 0px !important;
+   font-size: 3em;
+   padding-bottom: 25px;
+ }
+
+ footer div.right h2 {
+   padding-left: 0px;
+   font-size: 3.5em;
+ }
+
+ footer div.right p.phone a {
+   color: #2094C0;
+ }
+
+ footer div.right p.location a {
+   text-decoration: underline;
+   color: #2094C0;
+ }
+
+ footer div p a:active {
+   color: #02A1DB;
+ }
+
+ /* copyright section */
+
+ footer div.bottom {
+   font-size: 0.9em;
+ }
+
+ footer a.footer {
+   color: #02A1DB;
+ }
+}

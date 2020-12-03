@@ -48,6 +48,7 @@ i#phone-icon {
     z-index: 1;
     left: 15px;
     top: 15px;
+    color: #02A1DB;
   }
 
 
@@ -56,7 +57,7 @@ i#phone-icon {
     height: 100%;
     float: left;
     top: 50px;
-    background-color: #009879;
+    background-color: #02A1DB;
   }
 
   ul.navbar li {
@@ -92,7 +93,7 @@ i#phone-icon {
   }
 
   ul.navbar li:active {
-    background: #007d65;
+    background: #2094C0;
   }
 
 /* Rossano's logo */
@@ -126,8 +127,9 @@ i#phone-icon {
   position: fixed;
   display: block;
   position: fixed;
-  right: 15px;
+  right: 25px;
   top: 15px;
+  color: #02A1DB;
 
 }
 

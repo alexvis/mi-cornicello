@@ -13,12 +13,13 @@ function init() {
        document.querySelector(".navbar").classList.toggle("navbar--open")
      // get the seconde word in the class attribute
      var className = iNavbarEle.textContent
+     var bodyEle = document.getElementsByTagName("body");
      // change the navbar from bars to time
      if(className === "dehaze"){
        iNavbarEle.style.color = "white";
        iNavbarEle.textContent = "close";
      } else if (className === "close") {
-       iNavbarEle.style.color = "black";
+       iNavbarEle.style.color = "#02A1DB";
        iNavbarEle.textContent = "dehaze";
      }
    }
