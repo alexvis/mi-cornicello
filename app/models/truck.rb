@@ -1,3 +1,3 @@
-class Truck < ApllicatinRecord
+class Truck < ApplicatinRecord
 
 end

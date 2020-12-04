@@ -1,3 +1,3 @@
-class OrderOnline < ApllicationRecord 
+class OrderOnline < ApplicationRecord 
 
 end
