@@ -4,27 +4,26 @@
     <nav class="navbar">
       <!-- logo in mobel navbar -->
       <div id="logo">
-        <a href="#">Rossano's</a>
+        <%= link_to "Rossano's", root_path %>
       </div>
 
       <ul class="navbar">
-        <li><a href="#">Order Online</a></li>
+        <li><%= link_to "Order Online", orderonline_index_path %></li>
         <div class="border"></div>
-        <li><a href="#">Menu</a></li>
+        <li><%= link_to "Menu", menu_index_path %></li>
         <div class="border"></div>
-        <li><a href="#">Truck Tracker</a></li>
+        <li><%= link_to "Track Location", truck_index_path %></li>
         <div class="border"></div>
-        <li><a href="#">Our Story</a></li>
+        <li><%= link_to "The Truck", thetruck_index_path %></li>
         <div class="border"></div>
-        <li><a  href="#">The Truck</a></li>
-        <div class="border"></div>
-        <li><a href="#">Events</a></li>
+        <li><%= link_to "Events", events_path %></li>
         <div class="border"></div>
       </ul>
     </nav>
   </aside>
+
   <aside class="left">
-    <a id="logo" href="#">Rossano's</a>
+    <%= link_to "Rossanos's", root_path %>
   </aside>
 
   <!-- phone icon -->
@@ -32,19 +31,17 @@
   phone_enabled
   </i></a>
 
-
   <nav class="header">
     <ul class="header">
-      <li class="top-left"><a href="#">Truck Tracker</a></li>
-      <li class="top-right"><a href="#">Order Online</a></li>
-      <li class="b1"><a href="#">Our Story</a></li>
-      <li class="b2"><a  href="#">The Truck</a></li>
-      <li class="b3"><a href="#">Menu</a></li>
-      <li class="b4"><a href="#">Events</a></li>
+      <li class="top-left"><%= link_to "Order Online", orderonline_index_path %></li>
+      <li class="top-right"><%= link_to "Truck Location", truck_index_path %></li>
+      <li class="b2"><%= link_to "The Truck", thetruck_index_path %></li>
+      <li class="b3"><%= link_to "Menu", menu_index_path %></li>
+      <li class="b4"><%= link_to "Events", events_path %></li>
     </ul>
   </nav>
   <aside class="right">
-    <p class="phone"><a href="tel:+19542242846">{954} 224-2846</a></p>
+    <p class="phone"><a href="tel:+19542242846">(954) 224-2846</a></p>
     <p class="address">Delray Beach, FL</p>
   </aside>
 </header>
@@ -111,7 +108,7 @@
   <div class="right">
     <h2>Get In Touch</h2>
     <p>Rossano's Pizza Truck</p>
-    <p class="phone"><a href="tel:+19542242846">{954} 224-2846</a></p>
+    <p class="phone"><a href="tel:+19542242846">(954) 224-2846</a></p>
     <p class="address">Delray Beach, FL</p>
     <p class="location"><%= link_to 'Truck Location', class: "location" %></p>
   </div>

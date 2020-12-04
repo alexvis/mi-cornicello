@@ -29,8 +29,8 @@ i#phone-icon {
     margin-top: -10px;
     display: block;
     position: fixed;
-    left: -60%;
-    width: 60%;
+    left: -70%;
+    width: 70%;
     border: none;
     opacity: 0;
     transition: left 0.40s ease-in-out, opacity 0.40s ease-in-out;
@@ -66,8 +66,8 @@ i#phone-icon {
     float: left;
     font-size: 3em;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
 
   div.border {

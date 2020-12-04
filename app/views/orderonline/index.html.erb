@@ -1,0 +1,87 @@
+<header>
+  <aside class="asideNavbar">
+    <i id="navbar" class="material-icons">dehaze</i>
+    <nav class="navbar">
+      <!-- logo in mobel navbar -->
+      <div id="logo">
+        <%= link_to "Rossano's", root_path %>
+      </div>
+
+      <ul class="navbar">
+        <li><%= link_to "Order Online", orderonline_index_path %></li>
+        <div class="border"></div>
+        <li><%= link_to "Menu", menu_index_path %></li>
+        <div class="border"></div>
+        <li><%= link_to "Track Location", truck_index_path %></li>
+        <div class="border"></div>
+        <li><%= link_to "The Truck", thetruck_index_path %></li>
+        <div class="border"></div>
+        <li><%= link_to "Events", events_path %></li>
+        <div class="border"></div>
+      </ul>
+    </nav>
+  </aside>
+
+  <aside class="left">
+    <%= link_to "Rossanos's", root_path %>
+  </aside>
+
+  <!-- phone icon -->
+  <a href="tel:+19542242846"><i id="phone-icon" class="material-icons">
+  phone_enabled
+  </i></a>
+
+
+  <nav class="header">
+    <ul class="header">
+      <li class="top-left"><%= link_to "Order Online", orderonline_index_path %></li>
+      <li class="top-right"><%= link_to "Truck Location", truck_index_path %></li>
+      <li class="b2"><%= link_to "The Truck", thetruck_index_path %></li>
+      <li class="b3"><%= link_to "Menu", menu_index_path %></li>
+      <li class="b4"><%= link_to "Events", events_path %></li>
+    </ul>
+  </nav>
+  <aside class="right">
+    <p class="phone"><a href="tel:+19542242846">(954) 224-2846</a></p>
+    <p class="address">Delray Beach, FL</p>
+  </aside>
+</header>
+
+<div class="benvenuto">
+  <p class="benvenutto">Order Online</p>
+</div>
+
+<footer>
+  <div class="left">
+    <h2>Hours</h2>
+    <p>Monday - Thursday: 4pm - 8pm</p>
+    <p>Friday: 6pm - 10pm</p>
+    <p>Sunday: 11am - 4pm</p>
+  </div>
+
+  <div class="center">
+    <h2>Follow Us</h2>
+    <ul>
+      <!-- facebook and instagram logos link -->
+      <li class="insta"><a class="fa fa-instagram" href="https://www.instagram.com/mi_cornicello/" target="_blank"></a></li>
+      <li class="face"><a class="fa fa-facebook" href="https://www.facebook.com/micornicello" target="_blank"></a></li>
+    </ul>
+  </div>
+
+  <div class="right">
+    <h2>Get In Touch</h2>
+    <p>Rossano's Pizza Truck</p>
+    <p class="phone"><a href="tel:+19542242846">{954} 224-2846</a></p>
+    <p class="address">Delray Beach, FL</p>
+    <p class="location"><%= link_to 'Truck Location', class: "location" %></p>
+  </div>
+
+  <div class="bottom">
+
+    <p class="left">&#169;DesignCopyright 2020 Rossano's Pizza</p>
+
+    <%= link_to "Alex Visconde", "https://www.alexvisconde.com", target: "_black", class: "footer" %><p class="right">Site disign by</p>
+  </div>
+
+
+</footer>
