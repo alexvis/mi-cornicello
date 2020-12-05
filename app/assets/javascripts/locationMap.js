@@ -2,7 +2,6 @@
 
 window.onload = initMap;
 
-let map;
 
 
 function initMap() {
@@ -17,7 +16,7 @@ function initMap() {
     zoom: 10,
   }
   // map object
-  map = new google.maps.Map(document.getElementById("map"), location)
+  var map = new google.maps.Map(document.getElementById("map"), location)
 
   // current location marker
   var marker = new google.maps.Marker({
