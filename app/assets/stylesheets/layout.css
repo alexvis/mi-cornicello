@@ -114,14 +114,15 @@ p.benvenutto {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-size: 1.5em;
-  line-height: 50px;
-  width: 250px;
-  height: 50px;
+  font-size: 2.4em;
+  line-height: 58px;
+  width: 338px;
+  height: 59px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   border-radius: 50px/20px;
-
+  color: #02A1DB;
+  font-weight: 600;
 }
 
 /* section */
