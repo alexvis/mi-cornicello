@@ -7,8 +7,11 @@
     <%= csrf_meta_tags %>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?key=<%= Rails.application.credentials.google_maps_key %>&callback=initMap&libraries=&v=weekly" async>
+
+    </script>
+
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
