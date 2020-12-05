@@ -1,3 +1,4 @@
 class Truck < ApplicationRecord
 
+
 end
