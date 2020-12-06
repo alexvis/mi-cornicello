@@ -13,14 +13,16 @@ function init() {
        document.querySelector(".navbar").classList.toggle("navbar--open")
      // get the seconde word in the class attribute
      var className = iNavbarEle.textContent
-     var bodyEle = document.getElementsByTagName("body");
+     var map = document.getElementById("map");
      // change the navbar from bars to time
      if(className === "dehaze"){
        iNavbarEle.style.color = "white";
        iNavbarEle.textContent = "close";
+       map.style.opacity = 0;
      } else if (className === "close") {
        iNavbarEle.style.color = "#02A1DB";
        iNavbarEle.textContent = "dehaze";
+       map.style.opacity = 1;
      }
    }
 }

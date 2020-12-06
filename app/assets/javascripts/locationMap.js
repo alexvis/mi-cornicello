@@ -34,4 +34,8 @@ function initMap() {
     infoWindow.open(map, marker);
   })
 
+//   map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(
+//    document.getElementById('nav-id')
+// );
+
 }
