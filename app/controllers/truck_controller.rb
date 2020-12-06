@@ -5,7 +5,7 @@ class TruckController < ApplicationController
     json = HTTP.get('https://maps.googleapis.com/maps/api/geocode/json',
       params:{
         address: location,
-        key: Rails.application.credentials.google_maps_key
+        key: "AIzaSyAVvMcEDDYQz2QU347ASQ1cSLlN81iLDn4"
     })
     current_address = JSON.parse(json)
     puts current_address.inspect
