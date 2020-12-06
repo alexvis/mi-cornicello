@@ -3,17 +3,16 @@
 window.onload = initMap;
 
 function initMap() {
-  var locationInfo = document.getElementById("location-info")
-  if ( locationInfo !== null) {
+  // var locationInfo = document.getElementById("location-info")
   // latitude from user input
-    var lat = ""
-    var lng = ""
-      lat = parseFloat(locationInfo["dataset"]["lat"])
+    // var lat = ""
+    // var lng = ""
+      // lat = parseFloat(locationInfo["dataset"]["lat"])
       // longitube from user input
-      lng = parseFloat(locationInfo["dataset"]["lng"])
+      // lng = parseFloat(locationInfo["dataset"]["lng"])
     // initial location variable
     var location = {
-      center: { lat:lat , lng:lng },
+      center: { lat:42.3601 , lng:-71.0589 },
       zoom: 10,
     }
     // map object
@@ -21,7 +20,7 @@ function initMap() {
 
     // current location marker
     var marker = new google.maps.Marker({
-      position: { lat:lat , lng:lng },
+      position: { lat:42.3601 , lng:-71.0589 },
       map: map,
     })
 
@@ -34,5 +33,4 @@ function initMap() {
       infoWindow.open(map, marker);
     })
 
-  }
 }
