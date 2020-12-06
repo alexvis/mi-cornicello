@@ -9,7 +9,6 @@ class TruckController < ApplicationController
     })
     current_address = JSON.parse(json)
     if current_address.class == Hash
-      @format_address = current_address["results"][0]["formatted_address"]
       @lat = current_address["results"][0]["geometry"]["location"]["lat"]
       @lng = current_address["results"][0]["geometry"]["location"]["lng"]
     else
