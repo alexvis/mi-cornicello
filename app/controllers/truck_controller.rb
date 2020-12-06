@@ -7,11 +7,14 @@ class TruckController < ApplicationController
         address: location,
         key: Rails.application.credentials.google_maps_key
     })
-    current_addres = JSON.parse(json)
-    if current_addres
-      @format_address = current_addres["results"][0]["formatted_address"]
-      @lat = current_addres["results"][0]["geometry"]["location"]["lat"]
-      @lng = current_addres["results"][0]["geometry"]["location"]["lng"]
+    current_address = JSON.parse(json)
+    if current_address.class == Hash
+      @format_address = current_address["results"][0]["formatted_address"]
+      @lat = current_address["results"][0]["geometry"]["location"]["lat"]
+      @lng = current_address["results"][0]["geometry"]["location"]["lng"]
+    else
+      @lat = 0
+      @lng = 0
     end
   end
 
