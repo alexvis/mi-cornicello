@@ -15,7 +15,7 @@ function init() {
      var className = iNavbarEle.textContent
      var map = document.getElementById("map");
      // change the navbar from bars to time
-     if(className === "dehaze"){
+     if(className === "dehaze" && map){
        iNavbarEle.style.color = "white";
        iNavbarEle.textContent = "close";
        map.style.opacity = 0;

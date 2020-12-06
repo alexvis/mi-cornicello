@@ -11,7 +11,6 @@ class TruckController < ApplicationController
     @format_address = current_addres["results"][0]["formatted_address"]
     @lat = current_addres["results"][0]["geometry"]["location"]["lat"]
     @lng = current_addres["results"][0]["geometry"]["location"]["lng"]
-
   end
 
 end
