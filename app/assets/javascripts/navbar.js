@@ -4,25 +4,38 @@
 window.onload = init;
 
 function init() {
-   var iNavbarEle = document.getElementById("navbar");
+  // variables
+  var map;
+  var iNavbarEle;
+
+  iNavbarEle = document.getElementById("navbar");
 
 
-   iNavbarEle.onclick =
-     function() {
-       // add or delete navbar--open to the first navbar class
-       document.querySelector(".navbar").classList.toggle("navbar--open")
-     // get the seconde word in the class attribute
-     var className = iNavbarEle.textContent
-     var map = document.getElementById("map");
-     // change the navbar from bars to time
-     if(className === "dehaze" && map){
-       iNavbarEle.style.color = "white";
-       iNavbarEle.textContent = "close";
-       map.style.opacity = 0;
-     } else if (className === "close") {
-       iNavbarEle.style.color = "#02A1DB";
-       iNavbarEle.textContent = "dehaze";
-       map.style.opacity = 1;
-     }
-   }
+  iNavbarEle.onclick =
+    function() {
+      // add or delete navbar--open to the first navbar class
+      document.querySelector(".navbar").classList.toggle("navbar--open")
+      // get the seconde word in the class attribute
+      var className = iNavbarEle.textContent
+      var map = document.getElementById("map");
+      // change the navbar from bars to time
+      if(className === "dehaze"){
+        iNavbarEle.style.color = "white";
+        iNavbarEle.textContent = "close";
+
+        map = document.getElementById("map");
+        map.remove()
+      // map.style.opacity = 0;
+      } else if (className === "close") {
+        iNavbarEle.style.color = "#02A1DB";
+        iNavbarEle.textContent = "dehaze";
+        var divElm = document.createElement("div");
+        divElm.setAttribute("id", "map");
+
+        var section = document.getElementById("google-map").appendChild(divElm)
+
+
+      // map.style.opacity = 1;
+    }
+  }
 }
