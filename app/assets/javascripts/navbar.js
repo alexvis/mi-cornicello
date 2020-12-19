@@ -24,18 +24,25 @@ function init() {
         iNavbarEle.textContent = "close";
 
         map = document.getElementById("map");
-        map.remove()
+        // check if the map elemant is not null
+        if(map){
+          map.remove()
+        }
       // map.style.opacity = 0;
       } else if (className === "close") {
         iNavbarEle.style.color = "#02A1DB";
         iNavbarEle.textContent = "dehaze";
         var divElm = document.createElement("div");
         divElm.setAttribute("id", "map");
-
-        var section = document.getElementById("google-map").appendChild(divElm)
+        var section = document.getElementById("google-map");
+        // check if section existe
+        if(section) {
+          section.appendChild(divElm);
+        }
 
 
       // map.style.opacity = 1;
+
     }
   }
 }

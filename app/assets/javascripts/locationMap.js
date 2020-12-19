@@ -73,8 +73,6 @@ function initMaps() {
 
     }
   }
-
-
   // current location marker
 
 }

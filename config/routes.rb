@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root "homepage#index"
-  resources :homepage, only: :index
+  devise_for :users
+  resources :homepage, only: [:index]
+  resources :users
 
   resources :orderonline, only: :index
   resources :truck, only: :index
