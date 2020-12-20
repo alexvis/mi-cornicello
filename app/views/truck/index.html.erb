@@ -4,12 +4,14 @@
 </div>
 
 <section id="google-map">
+  <% if (current_user.admin?) %>
   <input id="autocomplite" type="text" placeholder="Search..." value="">
   <button id="button-truck" type="button" name="button">Clean Search</button>
+  <% end %>
   <div id="map"></div>
 </section>
 
-<address class="">
-  <h2 id="h1-address"><a href="https://maps.google.com/?q=1200 Pennsylvania Ave SE, Washington, 20003">Cick here for directions</a></h2>
+<address id="createdAddress">
+  <!-- <a href="https://maps.google.com/?q=lat: 42.3601, Washington, 20003">Cick here for directions</a> -->
 
 </address>

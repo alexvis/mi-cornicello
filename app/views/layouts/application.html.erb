@@ -58,6 +58,9 @@
           <li class="b2"><%= link_to "The Truck", thetruck_index_path %></li>
           <li class="b3"><%= link_to "Menu", menu_index_path %></li>
           <li class="b4"><%= link_to "Events", events_path %></li>
+          <% if current_user.admin? %>
+          <li class="b5"><%= link_to "Admin", admins_path %></li>
+          <% end %>
         </ul>
       </nav>
       <aside class="right">
@@ -71,7 +74,7 @@
     <!-- flash messages -->
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    
+
     <footer>
       <div class="left">
         <h2>Hours</h2>
