@@ -15,7 +15,7 @@ function initMaps() {
   autocomplite = new google.maps.places.Autocomplete(
     document.getElementById("autocomplite"), {
       types: ['address'],
-      componentRestrictions: {'country': ['usa']},
+      componentRestrictions: {'country': ['UY']},
       fiels: ['place_id', 'geometry', 'name', 'formatted_address']
     }
   );
@@ -64,19 +64,15 @@ function initMaps() {
         infoWindow.open(map, marker);
       });
 
-      // var addressNumbre = autocompliteInput.address_components[0].long_name
-      // var addressName = autocompliteInput.address_components[1].long_name
-      // var addressCity = autocompliteInput.address_components[3].long_name
-      // var addressZip = autocompliteInput.address_components[7].long_name
 
       var h1Address = document.getElementById("createdAddress");
-      var aNote = document.createTextNode("Click for whatever")
+      var aNote = document.createTextNode("Click here for directions")
       var aElem = document.createElement("a");
+
       aElem.appendChild(aNote)
       aElem.setAttribute("href", `https://maps.google.com/?q=${lat}, ${lng}`);
-      aElem.setAttribute("target", "_blank")
+      aElem.setAttribute("target", "_blank");
       h1Address.appendChild(aElem);
-      debugger
       var button = document.getElementById("button-truck");
 
       button.addEventListener('click', function() {

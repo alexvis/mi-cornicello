@@ -1,8 +1,12 @@
 class UsersController < ApplicationController
-  # before_action :authorize_user
+  before_action :authorize_user
 
   def index
     @users = User.all
+  end
+
+  def show
+    
   end
 
   def create
@@ -14,9 +18,9 @@ class UsersController < ApplicationController
 
   private
 
-#   # def authorize_user
-#   # if !current_user.admin? || !current_user
-#   #   raise ActionController::RoutingError.new("Not Found")
-#   # end
-# end
+  def authorize_user
+    if !current_user.admin? || !current_user
+      raise ActionController::RoutingError.new("Not Found")
+    end
+  end
 end
