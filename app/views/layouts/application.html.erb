@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width />
+    <meta name="viewport" content="width=device-width >
     <title>MiCornicello</title>
     <%= csrf_meta_tags %>
 
@@ -58,9 +58,7 @@
           <li class="b2"><%= link_to "The Truck", thetruck_index_path %></li>
           <li class="b3"><%= link_to "Menu", menu_index_path %></li>
           <li class="b4"><%= link_to "Events", events_path %></li>
-          <% if current_user.admin? %>
-          <li class="b5"><%= link_to "Admin", admins_path %></li>
-          <% end %>
+
         </ul>
       </nav>
       <aside class="right">

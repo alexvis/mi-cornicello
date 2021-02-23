@@ -14,8 +14,8 @@ class User < ApplicationRecord
     :validatable
 
 
-    def admin?
-      role == "admin"
-    end
+  def admin?
+    role == "admin"
+  end
 
 end
