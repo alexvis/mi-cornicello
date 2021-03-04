@@ -13,6 +13,10 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
 gem 'http'
 gem 'devise'
+gem 'carrierwave'
+gem 'jquery-rails'
+
+
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false

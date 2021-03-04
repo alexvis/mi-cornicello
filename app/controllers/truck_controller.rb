@@ -7,6 +7,8 @@ class TruckController < ApplicationController
         address: location,
         key: Rails.application.credentials.google_maps_key
     })
+
+    
   end
 
 end

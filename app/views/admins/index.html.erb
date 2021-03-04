@@ -6,6 +6,8 @@
 <% if user_signed_in? %>
   <ul>
     <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete  %></li>
+
+    <li><%= link_to "Sign In", new_user_session_path %></li>
   </ul>
 
   <% else %>
@@ -14,7 +16,7 @@
     <li><%= link_to 'Sign In', new_user_session_path %></li>
   </ul>
 
-  <%= current_user.email %>
+
 
 
 <% end %>

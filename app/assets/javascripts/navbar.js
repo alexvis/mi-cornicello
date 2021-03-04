@@ -36,6 +36,7 @@ function init() {
         divElm.setAttribute("id", "map");
         var section = document.getElementById("google-map");
         // check if section existe
+        location.reload();
         if(section) {
           section.appendChild(divElm);
         }

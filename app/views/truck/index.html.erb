@@ -4,13 +4,13 @@
 </div>
 
 <section id="google-map">
-  <% if (current_user.admin?) %>
-  <input id="autocomplite" type="text" placeholder="Search..." value="">
-  <button id="button-truck" type="button" name="button">Clean Search</button>
+  <% if (current_user) %>
+    <input id="autocomplite" type="text" placeholder="Search..." value="">
+    <button id="button-truck" type="button" name="button">Clean Search</button>
   <% end %>
 
   <address id="createdAddress">
   </address>
-  
+
   <div id="map"></div>
 </section>

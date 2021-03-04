@@ -15,7 +15,7 @@ function initMaps() {
   autocomplite = new google.maps.places.Autocomplete(
     document.getElementById("autocomplite"), {
       types: ['address'],
-      componentRestrictions: {'country': ['UY']},
+      componentRestrictions: {'country': ['US']},
       fiels: ['place_id', 'geometry', 'name', 'formatted_address']
     }
   );
@@ -70,7 +70,7 @@ function initMaps() {
       var aElem = document.createElement("a");
 
       aElem.appendChild(aNote)
-      aElem.setAttribute("href", `https://maps.google.com/?q=${lat}, ${lng}`);
+      aElem.setAttribute("href", "https://maps.google.com/?q=");
       aElem.setAttribute("target", "_blank");
       h1Address.appendChild(aElem);
       var button = document.getElementById("button-truck");
